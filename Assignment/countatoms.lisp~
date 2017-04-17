@@ -1,0 +1,8 @@
+					; counts the number of atoms in the list
+(defun countatoms(lst)
+  (cond
+   ((null lst) nil)
+   ((listp (car lst)) (countatoms (car lst)))
+   ((not (listp (car lst))) (+ 1 (countatoms(cdr lst))))
+   )
+  )

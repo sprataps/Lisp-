@@ -1,0 +1,9 @@
+					;returns the number of elements in a list of numbers that are followed by a larger integer
+
+(defun follows-l(lst)
+  (cond
+   ((null lst) 0)
+   ((null (cdt lst) 0))
+   ((< (car lst) (cadr lst)) follows-l(cdr lst))
+   (t (+ (follows-ls(cdr lst)) 1))
+   )
